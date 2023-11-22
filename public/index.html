@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarBhak Mart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logo3.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id="main">
+
+    <section id="produk">
+      <div class="container relative">
+        <div class="max-w-4xl 2xl:max-w-none">
+          <div class="flex justify-around items-center px-4 py-3 bg-white text-indigo-900 backdrop-blur-x1">
+            <img src="./img/logo3.png" alt="" width=60px
+              class="cursor-pointer">
+            <div>
+              <input type="text" id="search" placeholder="Search..."
+                class="rounded-full text-center focus:shadow"></input>
+              <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+          </div>
+
+          <div id="kotakProduct" class=" grid grid-cols-5 2xl:grid-cols-6 gap-6 px-4 pt-14 pb-20 ">
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow hover:scale-110 transition-all ">
+              <img src="./img/drink.jpg" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer "><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/drink2.jpg" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/food.jpg" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue] text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/food2.jpg" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/milktea.png" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/cupcake.jpg" alt="" id="gambar" class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+            <div id="product" class="shadow w-full rounded-md mt-2 overflow-hidden hover:scale-110 transition-all ">
+              <img src="./img/sushi.png" alt="" id="gambar"
+                class="object-cover object-center h-28 w-full">
+              <div>
+                <h2 id="product-name" class="font-bold p-1  "></h2>
+                <div class="flex justify-between ">
+                  <span>Rp.<p id="price" class="inline text-base pl-1  font-mono "></p></span>
+                  <span id="card-shopping"
+                    class="px-2 py-1 rounded-tl-xl bg-[lightBlue]  text-black-100 hover:bg-[darkBlue] cursor-pointer"><i
+                      class="fa-solid fa-cart-shopping fill-current"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wishlist">
+      <div class="container ">
+        <div id="invoice"
+          class="bg-blue-400 w-96 h-full fixed right-0 top-0 border-l-2 border-black-100 z-10 2xl:w-[24rem] ">
+          <div class="flex flex-col gap-3 pt-16">
+            <select name="" id=""
+              class="bg-white mx-auto rounded-md px-16 font-semibold text-lg shadow-lg text-black py-1">
+              <option value="" class="bg-white">Take Away</option>
+              <option value="" class="bg-white text-white">Delivery</option>
+            </select>
+            <span class="bg-blue-700 mx-auto rounded-md px-16 font-semibold text-lg shadow-lg text-black py-1"><i
+                class="fa-solid fa-user-plus pr-2"></i>Mang Jay</span>
+
+            <div class="bill border-y-3 rounded-xl overflow-y-scroll my-4 py-4 bg-white border-y-gray-500 px-4 h-80">
+
+            </div>
+            <div class="bg-white w-full absolute bottom-0 right-0">
+              <p class="px-2 inline border-b-2">Discount:
+              <p id="discount" class="hidden border-b-2">5%</p>
+              </p>
+              <p class="px-2">Tax: <span id="tax" class="hidden">Rp.200</span></p>
+              <div class="text-bkack bg-blue-800 text-lg px-2 py1">Total Amount: Rp.<span id="total"></span></div>
+              <div class="py-1 2xl:py-4 w-full cursor-pointer bg-[#006600] text-white-500 font-medium text-2xl px-6"
+                id="bayar" onclick="payment()">Pay</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

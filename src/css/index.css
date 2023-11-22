@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.bill::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.bill-child {
+  @apply py-3 px-3 m-1 rounded-md hidden border border-[skyblue];
+}
+
+.bill-childH3 {
+  @apply text-[goldenrod] text-[16px] font-semibold inline-block;
+}
+
+input:focus {
+  @apply outline-none;
+}
+
+.swiper {
+  @apply h-[30vh] w-[80%] rounded-md;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-blue-400 w-4 rounded;
+}
+
+.swiper-pagination-wrapper {
+  @apply bg-white p-2;
+}
+
+.iconBack {
+  @apply fixed top-[15px] left-[20px] w-[175px] h-[135px] cursor-pointer;
+}
