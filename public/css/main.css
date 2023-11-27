@@ -915,7 +915,7 @@ body::-webkit-scrollbar {
   font-size: 16px;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(218 165 32 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 input:focus {
