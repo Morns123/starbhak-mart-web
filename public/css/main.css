@@ -891,6 +891,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.not-found-container {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+}
+
 .bill::-webkit-scrollbar {
   display: none;
 }

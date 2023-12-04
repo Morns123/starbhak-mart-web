@@ -8,6 +8,45 @@ let disc = document.getElementById("discount");
 let getTax = document.getElementById("tax");
 let plus, minus, trashIcon;
 
+// search item
+
+let searchItem = () => {
+  let filter = search.value.trim().toLowerCase();
+  let found = false;
+
+  productsName.forEach((item, index) => {
+    let productName = item.innerText.toLowerCase();
+    let parentDiv = item.parentElement.parentElement;
+
+    if (productName.includes(filter)) {
+      parentDiv.style.display = '';
+      found = true;
+    } else {
+      parentDiv.style.display = 'none';
+    }
+  });
+
+  let notFoundContainer = document.querySelector('.not-found-container');
+
+  if (!found) {
+    if (notFoundContainer) {
+      while (notFoundContainer.firstChild) {
+        notFoundContainer.removeChild(notFoundContainer.firstChild);
+      }
+
+      let notFoundParagraph = document.createElement("p");
+      notFoundParagraph.textContent = "Item not found";
+      notFoundContainer.appendChild(notFoundParagraph);
+      notFoundContainer.style.display = 'block';
+    }
+  } else {
+    if (notFoundContainer) {
+      notFoundContainer.style.display = 'none';
+    }
+  }
+};
+search.addEventListener("keyup", searchItem);
+
 cardShopping.forEach((e, i) => {
   e.addEventListener("click", (e) => {
     // alert("test");
